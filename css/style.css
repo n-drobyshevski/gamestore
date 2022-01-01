@@ -1,0 +1,1086 @@
+:root {
+	--color-background: #202022;
+	--color-surface: #181818;
+	--color-card: #272729;
+	--color-primary: #1ee38d;
+	--color-yellow: #eac435;
+	--color-text-1: #ffffffde;
+	--color-text-2: #ffffff99;
+	--color-text-disabled: #ffffff61;
+	--color-yellow: #eac435;
+	--color-text-onLight-1: #000000de;
+	--color-text-onLight-2: #00000099;
+	--color-text-onLight-disabled: #00000061;
+	--font-family-heading: "Chivo";
+	--font-family-paragraph: "Overpass";
+	--font-size-h1: 2.441rem;
+	--font-size-h2: 1.953rem;
+	--font-size-h3: 1.5rem;
+	--font-size-h4: 1.25rem;
+	--font-size-h5: 1rem;
+	--font-size-p5: 1rem;
+	--font-size-p4: 1.25rem;
+	--font-size-p6: 0.8rem;
+	--shadow-1: 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+		0px 3px 1px -2px rgba(0, 0, 0, 0.12), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+	--shadow-1-hover: 0px 8px 17px 2px rgba(0, 0, 0, 0.44),
+		0px 3px 14px 2px rgba(0, 0, 0, 0.32), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+	--animation-timing: cubic-bezier(0.55, 0.06, 0.68, 0.19);
+}
+
+/* Fonts */
+
+/* overpass-300italic - latin */
+@font-face {
+	font-family: "Overpass";
+	font-style: italic;
+	font-weight: 300;
+	src: url("../fonts/overpass-v5-latin-300italic.eot");
+	/* IE9 Compat Modes */
+	src: local(""),
+		url("../fonts/overpass-v5-latin-300italic.eot?#iefix")
+			format("embedded-opentype"),
+		/* IE6-IE8 */ url("../fonts/overpass-v5-latin-300italic.woff2")
+			format("woff2"),
+		/* Super Modern Browsers */ url("../fonts/overpass-v5-latin-300italic.woff")
+			format("woff"),
+		/* Modern Browsers */ url("../fonts/overpass-v5-latin-300italic.ttf")
+			format("truetype"),
+		/* Safari, Android, iOS */
+			url("../fonts/overpass-v5-latin-300italic.svg#Overpass") format("svg");
+	/* Legacy iOS */
+}
+
+/* overpass-regular - latin */
+
+@font-face {
+	font-family: "Overpass";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/overpass-v5-latin-regular.eot");
+	/* IE9 Compat Modes */
+	src: local(""),
+		url("../fonts/overpass-v5-latin-regular.eot?#iefix")
+			format("embedded-opentype"),
+		/* IE6-IE8 */ url("../fonts/overpass-v5-latin-regular.woff2")
+			format("woff2"),
+		/* Super Modern Browsers */ url("../fonts/overpass-v5-latin-regular.woff")
+			format("woff"),
+		/* Modern Browsers */ url("../fonts/overpass-v5-latin-regular.ttf")
+			format("truetype"),
+		/* Safari, Android, iOS */
+			url("../fonts/overpass-v5-latin-regular.svg#Overpass") format("svg");
+	/* Legacy iOS */
+}
+
+/* overpass-700 - latin */
+
+@font-face {
+	font-family: "Overpass";
+	font-style: normal;
+	font-weight: 700;
+	src: url("../fonts/overpass-v5-latin-700.eot");
+	/* IE9 Compat Modes */
+	src: local(""),
+		url("../fonts/overpass-v5-latin-700.eot?#iefix") format("embedded-opentype"),
+		/* IE6-IE8 */ url("../fonts/overpass-v5-latin-700.woff2") format("woff2"),
+		/* Super Modern Browsers */ url("../fonts/overpass-v5-latin-700.woff")
+			format("woff"),
+		/* Modern Browsers */ url("../fonts/overpass-v5-latin-700.ttf")
+			format("truetype"),
+		/* Safari, Android, iOS */
+			url("../fonts/overpass-v5-latin-700.svg#Overpass") format("svg");
+	/* Legacy iOS */
+}
+
+/* chivo-regular - latin */
+
+@font-face {
+	font-family: "Chivo";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/chivo-v12-latin-regular.eot");
+	/* IE9 Compat Modes */
+	src: local(""),
+		url("../fonts/chivo-v12-latin-regular.eot?#iefix")
+			format("embedded-opentype"),
+		/* IE6-IE8 */ url("../fonts/chivo-v12-latin-regular.woff2") format("woff2"),
+		/* Super Modern Browsers */ url("../fonts/chivo-v12-latin-regular.woff")
+			format("woff"),
+		/* Modern Browsers */ url("../fonts/chivo-v12-latin-regular.ttf")
+			format("truetype"),
+		/* Safari, Android, iOS */ url("../fonts/chivo-v12-latin-regular.svg#Chivo")
+			format("svg");
+	/* Legacy iOS */
+}
+
+/* reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* //scroll styles */
+
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--color-card) var(--color-surface);
+}
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 0.75rem;
+}
+
+*::-webkit-scrollbar-track {
+	background: var(--color-surface);
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: var(--color-card);
+	border-radius: 0.75rem;
+	border: 1px solid var(--color-surface);
+}
+/* custom classes */
+
+.fill {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.fill img {
+	flex-shrink: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+/* body {
+    display: grid;
+    grid: 4rem 2rem 1fr 2rem 3rem /18rem [main] 1fr 12rem;
+    grid-template-areas: "menu header header" "menu ... ..." "menu main aside" "... ... ..." "footer footer footer";
+    background-color: var(--color-background);
+    overflow-x: hidden;
+} */
+
+/* @media screen and (max-width: 1400px) { */
+
+body {
+	display: grid;
+	grid: 4rem 2rem 1fr 2rem /16rem [main] 1fr;
+	grid-template-areas: "menu header" "menu ..." "menu main" "menu ...";
+	background-color: var(--color-background);
+	overflow-x: hidden;
+}
+
+/* } */
+
+.Header {
+	position: relative;
+	grid-area: header;
+	display: flex;
+	padding: 1rem 2rem;
+	color: var(--color-text1);
+	font-family: var(--font-family-paragraph);
+}
+
+.Header .Search {
+	display: flex;
+	width: 30rem;
+}
+
+.Header .Search input {
+	font-family: var(--font-family-paragraph);
+	font-size: var(--font-size-p6);
+	background-color: var(--color-card);
+	color: var(--color-text-2);
+	border: 1px solid var(--color-text-disabled);
+	border-radius: 0.25rem;
+	width: 100%;
+	padding: 0 1rem;
+}
+
+.Header .Search button {
+	border: none;
+	display: none;
+}
+
+.Header .ButtonGroup {
+	display: flex;
+	gap: 0.5rem;
+	width: 100%;
+	align-items: center;
+	justify-content: end;
+	color: var(--color-text-2);
+	align-items: flex-start;
+}
+
+.Header .ButtonGroup #user {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.Header .ButtonGroup #user p {
+	margin-bottom: 0.1rem;
+}
+
+.Header .ButtonGroup #user img {
+	position: relative;
+	top: -0.1rem;
+}
+.Header .ButtonGroup #user:hover{
+	color: var(--color-primary);
+}
+.Header .ButtonGroup #notif {
+	position: relative;
+}
+.Header .ButtonGroup #notif .dot {
+	position: absolute;
+	height: 0.75rem;
+	width: 0.75rem;
+	background-color: var(--color-primary);
+	border-radius: 50%;
+	display: inline-block;
+	right: -1px;
+	top: 0.5px;
+}
+.Menu {
+	grid-area: menu;
+	display: flex;
+	flex-direction: column;
+	/* padding: 1rem 3rem; */
+	background-color: var(--color-surface);
+	font-family: var(--font-family-paragraph);
+	overflow-y: scroll;
+}
+
+.Menu .Logo {
+	font-size: var(--font-size-h3);
+	color: white;
+	font-family: var(--font-family-heading);
+	text-transform: uppercase;
+	color: var(--color-primary);
+	margin: 1rem 2rem;
+	margin-bottom: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.2rem;
+}
+.Logo span {
+	border: 1px solid var(--color-primary);
+	border-radius: 0 0.5rem 0.5rem 0;
+	padding: 0.2rem;
+	width: min-content;
+	display: flex;
+	justify-content: end;
+	background-color: var(--color-primary);
+	color: var(--color-text-onLight-1);
+	margin-right: 0.1rem;
+}
+.Logo p {
+	padding: 0.2rem;
+	border: 1px solid var(--color-primary);
+	border-radius: 0.5rem 0 0 0.5rem;
+	width: 100%;
+}
+
+.Menu .MenuContainer {
+	padding: 1rem 2rem;
+	display: flex;
+	flex-direction: column;
+	color: var(--color-text-2);
+}
+
+.Menu .MenuContainer .MenuContainerHeader {
+	font-size: large;
+	/* font-weight: bold; */
+	text-transform: uppercase;
+	border: 1px solid transparent;
+	border-bottom-color: var(--color-text-2);
+	padding: 1rem 0;
+	margin-bottom: 0.5rem;
+}
+
+.Menu .MenuContainer .MenuItem {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+	color: var(--color-text-2);
+}
+
+.Menu .MenuContainer .MenuItem p {
+	padding: 1rem 0;
+	font-size: var(--font-size-p5);
+}
+
+.Main {
+	grid-area: main;
+	padding: 0 2rem;
+	font-family: var(--font-family-paragraph);
+}
+
+.Main .Banner {
+	position: relative;
+	width: 100%;
+	height: 20rem;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	color: var(--color-text-1);
+}
+
+.Main .Banner .banner_background {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: var(--color-background);
+}
+
+.Main .Banner .banner_background #gardient {
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(0, 0, 0, 1) 25%,
+		rgba(0, 0, 0, 0) 100%
+	);
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+
+.Main .Banner .banner_background img {
+	min-width: 100%;
+	position: absolute;
+	bottom: -260px;
+	right: 0;
+	opacity: 0.75;
+	z-index: 2;
+}
+
+.Main .Banner #banner_content {
+	/* display: flex; */
+	flex-direction: row;
+	width: 100%;
+	z-index: 3;
+}
+
+.Main .Banner #banner_content #content_img {
+	position: absolute;
+	top: -60px;
+	right: -75px;
+	z-index: 5;
+}
+
+.Main .Banner #banner_content #BannerText {
+	gap: 1rem;
+	padding: 2rem 4rem;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.Main .Banner #banner_content #BannerText .BannerHeader {
+	font-family: var(--font-family-heading);
+	font-size: var(--font-size-h1);
+	text-transform: uppercase;
+	font-weight: 900;
+	padding: 1.5rem 0;
+	border: 1px solid transparent;
+	border-bottom-color: white;
+	line-height: 2.3rem;
+	/* color: var(--color-yellow); */
+}
+
+.Main .Banner #banner_content #BannerText p {
+	/* height: 100%; */
+	line-height: 1.2rem;
+}
+
+.Main .Banner #banner_content #BannerText button {
+	display: block;
+	height: 3rem;
+	padding: 0.5rem 2rem;
+	text-align: center;
+	background-color: var(--color-primary);
+	color: var(--color-text-onLight-1);
+	border: 1px solid transparent;
+	border-radius: 2rem;
+	font-size: var(--font-size-p5);
+	font-family: var(--font-family-paragraph);
+	width: max-content;
+	text-transform: uppercase;
+	transition: all .3s;
+}
+.Main .Banner #banner_content #BannerText button:hover{
+	color:var(--color-primary);
+	border-color:var(--color-primary);
+	background-color: transparent;
+}
+.Main .Section {
+	display: flex;
+	flex-direction: column;
+}
+
+.Main .Section .SectionHeader {
+	display: flex;
+	gap: 1rem;
+	padding-bottom: 2rem;
+	padding-top: 4rem;
+}
+
+.Main .Section .SectionHeader .HeaderText {
+	font-family: var(--font-family-heading);
+	font-size: var(--font-size-h4);
+	color: var(--color-text-1);
+	align-self: center;
+	margin-right: 0.5rem;
+}
+
+.Main .Section .SectionHeader .Selector.filled {
+	padding: 0.5rem 1rem;
+	background-color: var(--color-primary);
+	color: black;
+	font-size: var(--font-size-p6);
+	text-transform: uppercase;
+	border: 1px solid transparent;
+	border-radius: 2rem;
+}
+
+.Main .Section .SectionHeader .Selector {
+	padding: 0.5rem 1rem;
+	background-color: transparent;
+	color: var(--color-primary);
+	font-size: var(--font-size-p6);
+	text-transform: uppercase;
+	border: 1px solid var(--color-primary);
+	border-radius: 2rem;
+}
+
+.SectionBox {
+	width: 100%;
+	padding-top: 0.5rem;
+	overflow-y: hidden;
+	max-height: 668px;
+}
+
+@media screen and (max-width: 1310) {
+	.Main .Section .SectionBox {
+		max-height: 660px;
+	}
+}
+
+.Main .Section .SectionContainer {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	height: 100%	;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.ItemCard {
+	display: flex;
+	justify-content: end;
+	padding: 1rem 3rem;
+	gap: 1rem;
+	flex-direction: column;
+	background-color: var(--color-card);
+	border-radius: 0.25rem;
+	box-shadow: var(--shadow-1);
+	transition: all .3 var(--animation-timing);
+}
+.ItemCard:hover{
+	box-shadow: var(--shadow-1-hover);
+}
+.ItemCard .Image {
+	margin-top: -.5rem;
+	margin-bottom: 1rem;
+}
+
+.ItemCard .Title {
+	font-size: var(--font-size-p5);
+	color: white;
+	text-align: center;
+}
+
+.ItemCard .Subtitle {
+	font-size: var(--font-size-p6);
+	color: var(--color-text-2);
+	text-align: center;
+}
+
+.ItemCard .Price {
+	font-size: var(--font-size-p4);
+	color: var(--color-primary);
+	text-align: center;
+}
+
+.ItemCard .Btn {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.ItemCard .Btn label{
+	color:var(--color-text-1);
+}
+.ItemCard .Btn button {
+	border: 1px solid var(--color-primary);
+	border-radius: 2rem;
+	background-color: transparent;
+	color: var(--color-primary);
+	font-size: var(--font-size-p4);
+	padding: 0.25rem 0.5rem;
+	padding-top: 0.1rem;
+	transition: all 0.3s var(--animation-timing);
+}
+.ItemCard .Btn button:hover {
+	border-color: transparent;
+	background-color: var(--color-primary);
+	color: var(--color-text-onLight-1);
+}
+.Sm-Banner {
+	width: 48.5%;
+	position: relative;
+	border: 1px solid var(--color-primary);
+	overflow: hidden;
+}
+
+.Sm-Banner img {
+	height: 350px;
+	position: absolute;
+	right: -40px;
+	top: 0;
+}
+
+@media only screen and (max-width: 1400px) {
+	.Sm-Banner img {
+		height: 350px;
+		position: absolute;
+		right: -50px;
+		top: 10px;
+	}
+}
+
+.Sm-Banner .Sm-Banner-content {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 3rem;
+	padding-bottom: 2rem;
+	gap: 0.5rem;
+	color: var(--color-text-1);
+}
+
+.Sm-Banner .Sm-Banner-content button {
+	display: block;
+	height: 3rem;
+	padding: 0.25rem 1rem;
+	text-align: center;
+	background-color: var(--color-primary);
+	color: black;
+	border: 1px solid transparent;
+	border-radius: 2rem;
+	font-size: var(--font-size-p6);
+	font-family: var(--font-family-paragraph);
+	width: max-content;
+	text-transform: uppercase;
+}
+.Sm-Banner .Sm-Banner-content button:hover {
+	border-color: var(--color-primary);
+	background-color: var(--color-background);
+	color: var(--color-primary);
+}
+.Sm-Banner .Sm-Banner-content .Price {
+	color: var(--color-primary);
+	font-size: var(--font-size-h4);
+	margin: 1rem 0;
+}
+
+.Sm-Banner .Sm-Banner-content .Desc {
+	height: 8rem;
+	width: 60%;
+	color: var(--color-text-2);
+	line-height: 1.2rem;
+	margin-bottom: 1.5rem;
+}
+
+.Sm-Banner .Sm-Banner-content .Title {
+	font-size: var(--font-size-h3);
+}
+
+.Sm-Banner .Sm-Banner-content .Subtitle {
+	color: var(--color-text-disabled);
+}
+
+.SM-Banner,
+.filled {
+	background-color: var(--color-primary);
+}
+
+.Sm-Banner,
+.filled .Sm-Banner-content .Title {
+	color: black;
+}
+
+.Sm-Banner,
+.filled .Sm-Banner-content .Subtitle {
+	color: black;
+}
+
+.Sm-Banner,
+.filled .Sm-Banner-content .Desc {
+	color: black;
+}
+
+.Sm-Banner,
+.filled .Sm-Banner-content .Price {
+	color: black;
+}
+
+.Sm-Banner .Sm-Banner-content button {
+	color: black;
+	border-color: black;
+}
+
+.GamesContainer {
+	width: 100%;
+	height: 375px;
+	position: relative;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.Games {
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+	gap: 1.5rem;
+	justify-content: space-evenly;
+	flex-wrap: nowrap;
+	flex-grow: 1;
+}
+
+.Games .ItemCard {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	width: 200px;
+	box-shadow: var(--shadow-1);
+	transition: all 0.3s ease-in;
+}
+.Games .ItemCard:hover {
+	box-shadow: var(--shadow-1-hover);
+}
+.Games .ItemCard .ImageContainer {
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+	align-items: end;
+	margin: 0;
+	height: 17rem;
+	width: 12.5rem;
+}
+
+.Games .ItemCard .ImageContainer img {
+	margin: 0;
+	height: 100%;
+}
+
+.Games .ItemCard .PriceContainer {
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	background-color: var(--color-primary);
+	border: 1px solid var(--color-primary);
+	border-radius: 0.25rem;
+	padding: 0.25rem;
+}
+
+.Games .ItemCard .PriceContainer p {
+	color: black;
+	margin-top: 0.1rem;
+	font-size: var(--font-size-p5);
+}
+
+.Games .ItemCard .Subcontent {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+}
+
+.Games .ItemCard .Subcontent .TextContent {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.5rem;
+}
+
+.Footer {
+	grid-area: footer;
+	background-color: var(--color-surface);
+}
+
+/* ---- Product Page styles ------ */
+.ProductCard,
+.ProductCardContent {
+	height: 100%;
+	height: 100%;
+}
+#product {
+	overflow: hidden;
+}
+.ProductCardContent {
+	display: flex;
+}
+.Product {
+	width: 30%;
+	background-color: var(--color-primary);
+	padding: 1.5rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+	border-radius: 0.25rem;
+	justify-content: space-between;
+}
+.Product .ProductImage {
+	border: 1px solid transparent;
+	border-radius: 0.5rem;
+	height: fit-content;
+	padding: 1rem;
+	background-color: #3aa677;
+	display: flex;
+	justify-content: center;
+}
+.ProductImage img {
+	width: 70%;
+}
+.ProductLogo {
+	padding: 1rem 0;
+	display: flex;
+	justify-content: center;
+}
+.ProductLogo img {
+	width: 110%;
+	margin: -1rem;
+	opacity: 0.15;
+}
+.ProductQuantity {
+	color: var(--color-text--onLight-1);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.5rem;
+	width: max-content;
+}
+
+.ProductQuantity .header {
+	text-transform: uppercase;
+	font-size: var(--font-size-h5);
+}
+.QuantityContainer {
+	display: flex;
+	gap: 0.5rem;
+}
+.QuantitySelector {
+	display: flex;
+	width: 15%;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem;
+	border: 1px solid var(--color-text-onLight-1);
+	border-radius: 0.25rem;
+	color: var(--color-text-onLight-1);
+	transition: all 0.3s ease-in-out;
+}
+.QuantitySelector:hover {
+	border-color: transparent;
+	color: var(--color-text-1);
+	background-color: var(--color-surface);
+}
+.MainContent {
+	position: relative;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	padding: 0 2rem;
+}
+.MainContent #img {
+	width: 120%;
+	position: absolute;
+	top: 35px;
+	left: -60px;
+	z-index: 2;
+}
+.MainContent #logo {
+	position: absolute;
+	right: -170px;
+	top: 150px;
+	height: 22%;
+	transform: rotate(-90deg);
+	opacity: 0.2;
+}
+.MainContent .MainContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.MainContainer .header {
+	text-transform: uppercase;
+	font-size: var(--font-size-h4);
+	color: var(--color-text-1);
+}
+.MainContainer .subTitle {
+	font-size: var(--font-size-p5);
+	color: var(--color-text-2);
+}
+.ContentGroup {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+.ContentGroup .Price {
+	font-size: var(--font-size-h3);
+	color: var(--color-primary);
+}
+.ContentGroup button {
+	border: 1px solid var(--color-primary);
+	border-radius: 2.5rem;
+	background-color: transparent;
+	color: var(--color-primary);
+	padding: 0.75rem 1rem;
+	text-transform: uppercase;
+	font-size: var(--font-size-p6);
+	transition: all 0.3s var(--animation-timing);
+}
+
+.ContentGroup button:hover {
+	border-color: transparent;
+	color: var(--color-text-onLight-1);
+	background-color: var(--color-primary);
+}
+.VariantSlider {
+	width: 20%;
+	display: flex;
+	gap: 1rem;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+.SliderContent {
+	display: flex;
+	gap: 1rem;
+	flex-direction: column;
+	width: 100%;
+	align-items: flex-end;
+	justify-content: center;
+}
+.SliderCard {
+	padding: 1rem;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+	background-color: #ffffff61;
+	width: max-content;
+	border-radius: 0.25rem;
+	align-items: center;
+	transition: all 0.2s ease-out;
+}
+.SliderCard:hover {
+	border: 2px solid var(--color-primary);
+}
+.SliderCard img {
+	width: 6rem;
+}
+.SelectColor {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	align-items: flex-end;
+}
+
+.SelectColor .header {
+	text-transform: uppercase;
+	font-size: var(--font-size-h5);
+	color: var(--color-text-1);
+}
+.SelectColor .subTitle {
+	font-size: var(--font-size-p5);
+	color: var(--color-text-2);
+}
+.ColorsContainer {
+	display: flex;
+	gap: 1rem;
+}
+.ColorSelector {
+	background-color: #ffffff41;
+	border: 8px solid transparent;
+	border-radius: 2.5rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.2s ease-in-out;
+}
+.ColorSelector:hover {
+	background-color: #ffffff81;
+}
+.ColorSelector .Color {
+	background-color: var(--color-yellow);
+	border: 8px solid transparent;
+	border-radius: 2.5rem;
+	width: 0.5rem;
+	height: 0.5rem;
+	transition: all 0.2s ease-in-out;
+}
+.ColorSelector:hover .Color {
+	height: 0.55rem;
+}

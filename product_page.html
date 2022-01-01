@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>site name</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <div class="Header">
+        <div class="Search">
+            <input type="search" id="site-search" name="q" aria-label="Search through site content" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <div class="ButtonGroup">
+            <div id="user">
+                <p>Username</p>
+                <img src="svg/account_circle.svg" width='32px'/>
+            </div>
+            <div id="notif">
+                    <img src="svg/notifications.svg" width='28px'/>
+                <span class="dot"></span>
+            </div>
+            <img src="svg/shopping_cart.svg" width='28px'/>
+        </div>
+    </div>
+
+    <div class="Menu">
+        <div class="Logo">
+            <span>Game</span><p>store</p>
+        </div>
+        <div class="MenuContainer">
+            <div class="MenuItem">
+
+                <img src="svg/user.svg" width="22px">
+                <p>Profile</p>
+            </div>
+            <div class="MenuItem">
+
+                <img src="svg/search.svg" width="22px">
+                <p>Search</p>
+            </div>
+            <div class="MenuItem">
+                <img src="svg/heart.svg" width="22px">
+                <p>Favorite</p>
+            </div>
+            <div class="MenuItem">
+
+                <img src="svg/wallet.svg" width="22px">
+                <p>Balance</p>
+            </div>
+        </div>
+        <div class="MenuContainer">
+            <p class="MenuContainerHeader"> Category</p>
+            <div class="MenuItem">
+                <img src="svg/headphone.svg" width="22px">
+                <p>Headphones</p>
+            </div>
+            <div class="MenuItem">
+                <img src="svg/game-controller.svg" width="22px">
+                <p>Gamepads</p>
+            </div>
+            <div class="MenuItem">
+                <img src="svg/vr-glasses.svg" width="22px">
+                <p>VR glasses</p>
+            </div>
+            <div class="MenuItem">
+                <img src="svg/keyboard.svg" width="22px">
+                <p>Keyboards</p>
+            </div>
+            <div class="MenuItem">
+                <img src="svg/computer.svg" width="22px">
+                <p>Computers</p>
+            </div>
+            <div class="MenuItem">
+                <img src="svg/trophy.svg" width="22px">
+                <p>Video games</p>
+            </div>
+        </div>
+        <div class="MenuContainer">
+            <div class="MenuItem">
+                <p>Help</p>
+            </div>
+            <div class="MenuItem">
+                <p>Conditions</p>
+            </div>
+            <div class="MenuItem">
+                <p>Confedentiality</p>
+            </div>
+        </div>
+    </div>
+    <div class="Main" id="product">
+        <div class="ProductCard">
+            <div class="ProductCardContent">
+                <div class="Product">
+                    <div class="ProductImage">
+                        <img src="images/xbox.png"/>
+                        
+                    </div>
+                    <div class="ProductLogo">
+                        <img src="images/xbox_logo.png" />
+                    </div>
+                    <div class="ProductQuantity">
+                        <p class="header">Product Quantity</p>
+                        <div class="QuantityContainer">
+                            <div class="QuantitySelector"><p>1</p></div>
+                            <div class="QuantitySelector"><p>2</p></div>
+                            <div class="QuantitySelector"><p>3</p></div>
+                            <div class="QuantitySelector"><p>4</p></div>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="MainContent">
+                    <img id="img" src="images/controllers.png"/>
+                    <img id="logo" src="images/xbox_word.png"/>
+                    <div class="MainContainer">
+                        <p class="subTitle">Original product</p>
+                        <h1 class="header">Xbox One</h1>
+                        <div class="ContentGroup">
+                            <p class="Price">19.50$</p>
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="VariantSlider">
+                    <div class="SliderContent">
+                        <div class="SliderCard">
+                            <img src="images/xbox_controller_blue.png" />
+                        </div>
+                        <div class="SliderCard">
+                            <img src="images/xbox_controller_red.png" />
+                        </div>
+                        <div class="SliderCard">
+                            <img src="images/xbox_controller_yellow.png" />
+                        </div>
+                    </div>
+                    <div class="SelectColor">
+                        <p class="header">Product Quantity</p>
+                        <p class="subTitle">Xbox one</p>
+                        <div class="ColorsContainer">
+                            <div class="ColorSelector"><div class="Color" style="background-color: #25509e;"></div></div>
+                            <div class="ColorSelector"><div class="Color" style="background-color: #000000;"></div></div>
+                            <div class="ColorSelector"><div class="Color" style="background-color: #eb1d20;"></div></div>
+                            <div class="ColorSelector"><div class="Color" style="background-color: #ffffff;"></div></div>
+                            <div class="ColorSelector"><div class="Color" style="background-color: #d0f011;"></div></div>
+                        </div>   
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/index.js"> </script>
+</html>

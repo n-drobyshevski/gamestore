@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>site name</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <div class="Header">
+        <div class="Search">
+            <input type="search" id="site-search" name="q" aria-label="Search through site content" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <div class="ButtonGroup">
+            <div id="user">
+                <p>Username</p>
+                <img src="svg/account_circle.svg" width='32px'/>
+            </div>
+            <div id="notif">
+                    <img src="svg/notifications.svg" width='28px'/>
+                <span class="dot"></span>
+            </div>
+            <img src="svg/shopping_cart.svg" width='28px'/>
+        </div>
+    </div>
+
+    <div class="Menu">
+        <div class="Logo">
+            <span>Game</span><p>store</p>
+        </div>
+        <div class="MenuContainer">
+            <div class="MenuItem">
+
+                <img src="svg/user.svg" width="22px">
+                <p>Profile</p>
+            </div>
+            <div class="MenuItem">
+
+                <img src="svg/search.svg" width="22px">
+                <p>Search</p>
+            </div>
+            <div class="MenuItem">
+                <img src="svg/heart.svg" width="22px">
+                <p>Favorite</p>
+            </div>
+            <div class="MenuItem">
+
+                <img src="svg/wallet.svg" width="22px">
+                <p>Balance</p>
+            </div>
+        </div>
+        <div class="MenuContainer">
+            <p class="MenuContainerHeader"> Category</p>
+            <div class="MenuItem">
+                <img src="svg/headphone.svg" width="22px">
+                <p>Headphones</p>
+            </div>
+            <div class="MenuItem">
+                <img src="svg/game-controller.svg" width="22px">
+                <p>Gamepads</p>
+            </div>
+            <div class="MenuItem">
+                <img src="svg/vr-glasses.svg" width="22px">
+                <p>VR glasses</p>
+            </div>
+            <div class="MenuItem">
+                <img src="svg/keyboard.svg" width="22px">
+                <p>Keyboards</p>
+            </div>
+            <div class="MenuItem">
+                <img src="svg/computer.svg" width="22px">
+                <p>Computers</p>
+            </div>
+            <div class="MenuItem">
+                <img src="svg/trophy.svg" width="22px">
+                <p>Video games</p>
+            </div>
+        </div>
+        <div class="MenuContainer">
+            <div class="MenuItem">
+                <p>Help</p>
+            </div>
+            <div class="MenuItem">
+                <p>Conditions</p>
+            </div>
+            <div class="MenuItem">
+                <p>Confedentiality</p>
+            </div>
+        </div>
+    </div>
+    <div class="Main">
+        <div class="Banner">
+            <div class='banner_background'>
+                <div id="gardient"></div>
+                <img id='banner_background' src="images/main_banner.jpg" alt='text' width='1152px'>
+            </div>
+            <div id="banner_content">
+                <div id="BannerText">
+                    <p class="BannerHeader">Playerunknown's Battlegrounds</p>
+                    <p>PlayerUnknown's Battlegrounds is an online multiplayer battle royale game developed and published by PUBG Corporation, a subsidiary of Bluehole. </p>
+                    <button type="button">Get the game</button>
+                </div>
+                <img id='content_img' src="images/main_banner_img.png" alt='text' height='400px'>
+            </div>
+        </div>
+        <div class="Section">
+            <div class="SectionHeader">
+                <p class="HeaderText">Our products</p>
+                <button class="Selector filled" type="button">Top</button>
+                <button class="Selector" type="button">Popular</button>
+                <button class="Selector" type="button">Most sold</button>
+            </div>
+            <div class="SectionBox">
+                <div class="SectionContainer">
+                    <div class="ItemCard">
+                        <div><img class="Image" src="images/headphones.jpg" width="130px"></img>
+                        </div>
+                        <p class="Title">JBL Quantum 800</p>
+                        <p class="Subtitle">Headphones</p>
+                        <p class="Price">19.50$</p>
+                        <div class="Btn">
+                            <button name="btn" type="button" href="products_page.html">+</button>
+                            <label for="btn">Add to cart</label>
+                        </div>
+                    </div>
+
+                    <div class="ItemCard">
+                        <div><img class="Image" src="images/glasses.jpg" width="130px"></img>
+                        </div>
+                        <p class="Title">Oculus Rift </p>
+                        <p class="Subtitle">VR glasses</p>
+                        <p class="Price">1,104.00$</p>
+                        <div class="Btn">
+                            <button name="btn" type="button">+</button>
+                            <label for="btn">Add to cart</label>
+                        </div>
+                    </div>
+                    <div class="ItemCard">
+                        <div><img class="Image" src="images/keyboard.jpg" width="130px"></img>
+                        </div>
+                        <p class="Title">NEWMEN GM610</p>
+                        <p class="Subtitle">Keyboard</p>
+                        <p class="Price">49.50$</p>
+                        <div class="Btn">
+                            <button name="btn" type="button">+</button>
+                            <label for="btn">Add to cart</label>
+                        </div>
+                    </div>
+                    <div class="ItemCard">
+                        <div><img class="Image" src="images/glasses.jpg" width="130px"></img>
+                        </div>
+                        <p class="Title">Oculus Rift </p>
+                        <p class="Subtitle">VR glasses</p>
+                        <p class="Price">1,104.00$</p>
+                        <div class="Btn">
+                            <button name="btn" type="button">+</button>
+                            <label for="btn">Add to cart</label>
+                        </div>
+                    </div>
+                    <div class="ItemCard">
+                        <div><img class="Image" src="images/mouse.jpg" width="130px"></img>
+                        </div>
+                        <p class="Title">Logitech G502</p>
+                        <p class="Subtitle">Mouse</p>
+                        <p class="Price">49.99$</p>
+                        <div class="Btn">
+                            <button name="btn" type="button">+</button>
+                            <label for="btn">Add to cart</label>
+                        </div>
+                    </div>
+                    <div class="ItemCard">
+                        <div><img class="Image" src="images/keyboard.jpg" width="130px"></img>
+                        </div>
+                        <p class="Title">NEWMEN GM610</p>
+                        <p class="Subtitle">Keyboard</p>
+                        <p class="Price">49.50$</p>
+                        <div class="Btn">
+                            <button name="btn" type="button">+</button>
+                            <label for="btn">Add to cart</label>
+                        </div>
+                    </div>
+
+                    <div class="ItemCard">
+                        <div><img class="Image" src="images/glasses.jpg" width="130px"></img>
+                        </div>
+                        <p class="Title">Oculus Rift </p>
+                        <p class="Subtitle">VR glasses</p>
+                        <p class="Price">1,104.00$</p>
+                        <div class="Btn">
+                            <button name="btn" type="button">+</button>
+                            <label for="btn">Add to cart</label>
+                        </div>
+                    </div>
+                    <div class="ItemCard">
+                        <div><img class="Image" src="images/headphones.jpg" width="130px"></img>
+                        </div>
+                        <p class="Title">JBL Quantum 800</p>
+                        <p class="Subtitle">Headphones</p>
+                        <p class="Price">19.50$</p>
+                        <div class="Btn">
+                            <button name="btn" type="button">+</button>
+                            <label for="btn">Add to cart</label>
+                        </div>
+                    </div>
+                    <div class="ItemCard">
+                        <div><img class="Image" src="images/keyboard.jpg" width="130px"></img>
+                        </div>
+                        <p class="Title">NEWMEN GM610</p>
+                        <p class="Subtitle">Keyboard</p>
+                        <p class="Price">49.50$</p>
+                        <div class="Btn">
+                            <button name="btn" type="button">+</button>
+                            <label for="btn">Add to cart</label>
+                        </div>
+                    </div>
+                    <div class="ItemCard">
+                        <div><img class="Image" src="images/glasses.jpg" width="130px"></img>
+                        </div>
+                        <p class="Title">Oculus Rift </p>
+                        <p class="Subtitle">VR glasses</p>
+                        <p class="Price">1,104.00$</p>
+                        <div class="Btn">
+                            <button name="btn" type="button">+</button>
+                            <label for="btn">Add to cart</label>
+                        </div>
+                    </div>
+
+                    <div class="ItemCard">
+                        <div><img class="Image" src="images/headphones.jpg" width="130px"></img>
+                        </div>
+                        <p class="Title">JBL Quantum 800</p>
+                        <p class="Subtitle">Headphones</p>
+                        <p class="Price">19.50$</p>
+                        <div class="Btn">
+                            <button name="btn" type="button">+</button>
+                            <label for="btn">Add to cart</label>
+                        </div>
+                    </div>
+                    <div class="ItemCard">
+                        <div><img class="Image" src="images/mouse.jpg" width="130px"></img>
+                        </div>
+                        <p class="Title">Logitech G502</p>
+                        <p class="Subtitle">Mouse</p>
+                        <p class="Price">49.99$</p>
+                        <div class="Btn">
+                            <button name="btn" type="button">+</button>
+                            <label for="btn">Add to cart</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Section">
+            <div class="SectionHeader">
+                <p class="HeaderText">Our products</p>
+            </div>
+            <div class="SectionContainer">
+                <div class="Sm-Banner">
+                    <div class="Sm-Banner-content">
+                        <p class="Subtitle">Mouse</p>
+                        <p class="Price">70.80$</p>
+                        <p class="Title">Logitech G502 LIGHTSPEED S</p>
+                        <p class="Desc">Logitech G502 LIGHTSPEED Wireless Gaming Mouse, HERO 25K Sensor, 25,600 DPI, RGB, Adjustable Weights, 11 Programmable Buttons, Long Battery Life, POWERPLAY-compatible, PC/Mac - Black </p>
+                        <button type="button">Go to catalog </button>
+                    </div>
+                    <img src="images/mouse_banner.jpg" height="450px"></img>
+                </div>
+                <div class="Sm-Banner filled">
+                    <div class="Sm-Banner-content">
+                        <p class="Subtitle">Headphones</p>
+                        <p class="Price">62.30$</p>
+                        <p class="Title">Razer Kraken</p>
+                        <p class="Desc">Razer Kraken - Cross-Platform Wired Gaming Headset (PC, PS4, Xbox One & Switch, 50mm Diaphragm, 3.5mm Cable with Inline Controls) Black</p>
+                        <button type="button">Go to catalog </button>
+                    </div>
+                    <img src="images/headphones_banner.jpg" height="450px"></img>
+                </div>
+            </div>
+        </div>
+        <div class="Section">
+            <div class="SectionHeader">
+                <p class="HeaderText">Games</p>
+                <button class="Selector filled" type="button">Top</button>
+                <button class="Selector" type="button">Popular</button>
+                <button class="Selector" type="button">Most sold</button>
+            </div>
+            <div class="GamesContainer">
+                <div class="Games">
+                    <div class="ItemCard">
+                        <div class="ImageContainer"><img class="Image" src="images/cyberpunk.jpg"></img>
+                        </div>
+                        <div class="PriceContainer">
+                            <p class="Price">69.50$</p>
+                        </div>
+                        <div class="Subcontent">
+                            <div class="TextContent">
+                                <p class="Title">Cyberpunk-2077</p>
+                                <p class="Subtitle">PC games</p>
+                            </div>
+                            <div class="Btn">
+                                <button name="btn" type="button">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ItemCard">
+                        <div class="ImageContainer"><img class="Image" src="images/battlefield.jpg"></img>
+                        </div>
+                        <div class="PriceContainer">
+                            <p class="Price">59.50$</p>
+                        </div>
+                        <div class="Subcontent">
+                            <div class="TextContent">
+                                <p class="Title">Battlefield 2042</p>
+                                <p class="Subtitle">PC games</p>
+                            </div>
+                            <div class="Btn">
+                                <button name="btn" type="button">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ItemCard">
+                        <div class="ImageContainer"><img class="Image" src="images/cs.jpg"></img>
+                        </div>
+                        <div class="PriceContainer">
+                            <p class="Price">Free</p>
+                        </div>
+                        <div class="Subcontent">
+                            <div class="TextContent">
+                                <p class="Title">Counter Strike</p>
+                                <p class="Subtitle">PC games</p>
+                            </div>
+                            <div class="Btn">
+                                <button name="btn" type="button">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ItemCard">
+                        <div class="ImageContainer"><img class="Image" src="images/far_cry.png"></img>
+                        </div>
+                        <div class="PriceContainer">
+                            <p class="Price">89.50$</p>
+                        </div>
+                        <div class="Subcontent">
+                            <div class="TextContent">
+                                <p class="Title">Far Cry 6</p>
+                                <p class="Subtitle">PC games</p>
+                            </div>
+                            <div class="Btn">
+                                <button name="btn" type="button">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ItemCard">
+                        <div class="ImageContainer"><img class="Image" src="images/pubg.jpg"></img>
+                        </div>
+                        <div class="PriceContainer">
+                            <p class="Price">37.50$</p>
+                        </div>
+                        <div class="Subcontent">
+                            <div class="TextContent">
+                                <p class="Title">PUBG</p>
+                                <p class="Subtitle">PC games</p>
+                            </div>
+                            <div class="Btn">
+                                <button name="btn" type="button">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ItemCard">
+                        <div class="ImageContainer"><img class="Image" src="images/battlefield.jpg"></img>
+                        </div>
+                        <div class="PriceContainer">
+                            <p class="Price">59.50$</p>
+                        </div>
+                        <div class="Subcontent">
+                            <div class="TextContent">
+                                <p class="Title">Battlefield 2042</p>
+                                <p class="Subtitle">PC games</p>
+                            </div>
+                            <div class="Btn">
+                                <button name="btn" type="button">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ItemCard">
+                        <div class="ImageContainer"><img class="Image" src="images/dota.jpg"></img>
+                        </div>
+                        <div class="PriceContainer">
+                            <p class="Price">Free</p>
+                        </div>
+                        <div class="Subcontent">
+                            <div class="TextContent">
+                                <p class="Title">Dota 2</p>
+                                <p class="Subtitle">PC games</p>
+                            </div>
+                            <div class="Btn">
+                                <button name="btn" type="button">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Footer"></div>
+    </div>
+
+</body>
+<script src="js/index.js"> </script>
+
+</html>
