@@ -289,6 +289,17 @@ body {
 	width: 100%;
 }
 
+.Glass {
+	background-color: rgba(89, 89, 89, 0.35);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	box-shadow: rgba(14, 14, 14, 0.19) 0px 6px 15px 0px;
+	-webkit-box-shadow: rgba(14, 14, 14, 0.19) 0px 6px 15px 0px;
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	color: rgb(128, 128, 128);
+}
 /* body {
     display: grid;
     grid: 4rem 2rem 1fr 2rem 3rem /18rem [main] 1fr 12rem;
@@ -307,7 +318,6 @@ body {
 	overflow-x: hidden;
 }
 
-/* } */
 
 .Header {
 	position: relative;
@@ -363,7 +373,7 @@ body {
 	position: relative;
 	top: -0.1rem;
 }
-.Header .ButtonGroup #user:hover{
+.Header .ButtonGroup #user:hover {
 	color: var(--color-primary);
 }
 .Header .ButtonGroup #notif {
@@ -553,11 +563,11 @@ body {
 	font-family: var(--font-family-paragraph);
 	width: max-content;
 	text-transform: uppercase;
-	transition: all .3s;
+	transition: all 0.3s;
 }
-.Main .Banner #banner_content #BannerText button:hover{
-	color:var(--color-primary);
-	border-color:var(--color-primary);
+.Main .Banner #banner_content #BannerText button:hover {
+	color: var(--color-primary);
+	border-color: var(--color-primary);
 	background-color: transparent;
 }
 .Main .Section {
@@ -617,7 +627,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1rem;
-	height: 100%	;
+	height: 100%;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
@@ -631,13 +641,13 @@ body {
 	background-color: var(--color-card);
 	border-radius: 0.25rem;
 	box-shadow: var(--shadow-1);
-	transition: all .3 var(--animation-timing);
+	transition: all 0.3 var(--animation-timing);
 }
-.ItemCard:hover{
+.ItemCard:hover {
 	box-shadow: var(--shadow-1-hover);
 }
 .ItemCard .Image {
-	margin-top: -.5rem;
+	margin-top: -0.5rem;
 	margin-bottom: 1rem;
 }
 
@@ -664,8 +674,8 @@ body {
 	align-items: center;
 	gap: 1rem;
 }
-.ItemCard .Btn label{
-	color:var(--color-text-1);
+.ItemCard .Btn label {
+	color: var(--color-text-1);
 }
 .ItemCard .Btn button {
 	border: 1px solid var(--color-primary);
@@ -868,19 +878,13 @@ body {
 }
 
 /* ---- Product Page styles ------ */
-.ProductCard,
-.ProductCardContent {
-	height: 100%;
-	height: 100%;
-}
-#product {
-	overflow: hidden;
-}
 .ProductCardContent {
 	display: flex;
+	overflow: hidden;
 }
 .Product {
 	width: 30%;
+	height: 120%;
 	background-color: var(--color-primary);
 	padding: 1.5rem;
 	display: flex;
@@ -889,18 +893,17 @@ body {
 	gap: 1rem;
 	border-radius: 0.25rem;
 	justify-content: space-between;
+	z-index: 3;
 }
 .Product .ProductImage {
-	border: 1px solid transparent;
 	border-radius: 0.5rem;
 	height: fit-content;
 	padding: 1rem;
-	background-color: #3aa677;
 	display: flex;
 	justify-content: center;
 }
 .ProductImage img {
-	width: 70%;
+	width: 150%;
 }
 .ProductLogo {
 	padding: 1rem 0;
@@ -952,6 +955,14 @@ body {
 	flex-direction: column;
 	justify-content: end;
 	padding: 0 2rem;
+	/* z-index: 3; */
+}
+.MainContent video {
+	width: 130%;
+	position: absolute;
+	top: -43px;
+	left: -180px;
+	z-index: 1;
 }
 .MainContent #img {
 	width: 120%;
@@ -967,11 +978,15 @@ body {
 	height: 22%;
 	transform: rotate(-90deg);
 	opacity: 0.2;
+	z-index: -2;
 }
 .MainContent .MainContainer {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
+	z-index: 2;
+	position: absolute;
+	bottom: 20px;
 }
 .MainContainer .header {
 	text-transform: uppercase;
@@ -1014,6 +1029,10 @@ body {
 	flex-direction: column;
 	align-items: flex-end;
 	justify-content: space-between;
+	z-index: 3;
+	background-color: var(--color-background);
+	padding: 1rem;
+	border-radius: 0.25rem;
 }
 .SliderContent {
 	display: flex;
@@ -1025,16 +1044,13 @@ body {
 }
 .SliderCard {
 	padding: 1rem;
-	border-left: 2px solid transparent;
-	border-right: 2px solid transparent;
-	background-color: #ffffff61;
 	width: max-content;
 	border-radius: 0.25rem;
 	align-items: center;
 	transition: all 0.2s ease-out;
 }
 .SliderCard:hover {
-	border: 2px solid var(--color-primary);
+	border: 1px solid var(--color-primary);
 }
 .SliderCard img {
 	width: 6rem;
@@ -1044,6 +1060,7 @@ body {
 	flex-direction: column;
 	gap: 0.5rem;
 	align-items: flex-end;
+	width: max-content;
 }
 
 .SelectColor .header {
@@ -1060,7 +1077,6 @@ body {
 	gap: 1rem;
 }
 .ColorSelector {
-	background-color: #ffffff41;
 	border: 8px solid transparent;
 	border-radius: 2.5rem;
 	width: 1.5rem;
@@ -1083,4 +1099,74 @@ body {
 }
 .ColorSelector:hover .Color {
 	height: 0.55rem;
+}
+
+.About {
+	margin-top: 5rem;
+	display: flex;
+	justify-content: space-between;
+}
+video,
+.VideoContainer {
+	width: 60%;
+}
+.VideoContainer iframe {
+	width: 100%;
+	height: 350px;
+}
+
+.About .TextContainer {
+	margin-bottom: 4rem;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+}
+.About .TextContainer h2 {
+	color: var(--color-text-1);
+	font-family: var(--font-family-heading);
+	font-size: var(--font-size-h2);
+	margin-bottom: 2rem;
+}
+.About .TextContainer p {
+	color: var(--color-text-2);
+	font-family: var(--font-family-paragraph);
+	font-size: var(--font-size-p5);
+	line-height: 1.2rem;
+	letter-spacing: 0.02rem;
+	height: 100%;
+	margin-bottom: 2rem;
+	text-align:justify;
+}
+.About .LinkGroup {
+	display: flex;
+	flex-direction: column;
+	width:100%;
+	gap:.5rem;
+}
+.About .LinkGroup a {
+	display: block;
+	/* height: 3rem; */
+	padding: 0.5rem;
+	text-align: center;
+	background-color: var(--color-primary);
+	color: var(--color-text-onLight-1);
+	border: 1px solid transparent;
+	border-radius: 2rem;
+	font-size: var(--font-size-p5);
+	font-family: var(--font-family-paragraph);
+	width: 100%;
+	text-transform: uppercase;
+	transition: all 0.3s;
+	text-decoration: none;
+}
+.About .LinkGroup #secondary{
+	color: var(--color-primary);
+	border-color: var(--color-primary);
+	background-color: transparent;
+
+}
+.About .LinkGroup a:hover {
+	color: var(--color-primary);
+	border-color: var(--color-primary);
+	background-color: transparent;
 }
