@@ -638,7 +638,6 @@ body {
 	padding: 1rem 3rem;
 	gap: 1rem;
 	flex-direction: column;
-	background-color: var(--color-card);
 	border-radius: 0.25rem;
 	box-shadow: var(--shadow-1);
 	transition: all 0.3 var(--animation-timing);
