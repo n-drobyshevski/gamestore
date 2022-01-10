@@ -318,7 +318,6 @@ body {
 	overflow-x: hidden;
 }
 
-
 .Header {
 	position: relative;
 	grid-area: header;
@@ -963,6 +962,25 @@ body {
 	left: -180px;
 	z-index: 1;
 }
+
+@media only screen and (min-width: 1500px) {
+	.MainContent video {
+		width: 130%;
+		position: absolute;
+		top: -43px;
+		left: -215px;
+		z-index: 1;
+	}
+}
+@media only screen and (min-width: 2000px) {
+	.MainContent video {
+		width: 130%;
+		position: absolute;
+		top: -43px;
+		left: -324px;
+		z-index: 1;
+	}
+}
 .MainContent #img {
 	width: 120%;
 	position: absolute;
@@ -1134,13 +1152,13 @@ video,
 	letter-spacing: 0.02rem;
 	height: 100%;
 	margin-bottom: 2rem;
-	text-align:justify;
+	text-align: justify;
 }
 .About .LinkGroup {
 	display: flex;
 	flex-direction: column;
-	width:100%;
-	gap:.5rem;
+	width: 100%;
+	gap: 0.5rem;
 }
 .About .LinkGroup a {
 	display: block;
@@ -1158,11 +1176,10 @@ video,
 	transition: all 0.3s;
 	text-decoration: none;
 }
-.About .LinkGroup #secondary{
+.About .LinkGroup #secondary {
 	color: var(--color-primary);
 	border-color: var(--color-primary);
 	background-color: transparent;
-
 }
 .About .LinkGroup a:hover {
 	color: var(--color-primary);
