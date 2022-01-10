@@ -972,12 +972,21 @@ body {
 		z-index: 1;
 	}
 }
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 1800px) {
 	.MainContent video {
 		width: 130%;
 		position: absolute;
 		top: -43px;
 		left: -324px;
+		z-index: 1;
+	}
+}
+@media only screen and (min-width: 2300px) {
+	.MainContent video {
+		width: 130%;
+		position: absolute;
+		top: -43px;
+		left: -400px;
 		z-index: 1;
 	}
 }
